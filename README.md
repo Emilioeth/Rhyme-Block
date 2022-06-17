@@ -18,10 +18,10 @@ RhymeBlock is a website that allows people to write into. The user can then sear
 
 
 Built by 
-[Priscilla Gonzalez](https://github.com/kirstgonz)
-[Emilio Thomas](https://github.com/Emilioeth)
-[Blaine Brady](https://github.com/BlaineKB)
-[Kirstyn Gonzalez](https://github.com/kirstgonz)
+-[Priscilla Gonzalez](https://github.com/kirstgonz)
+-[Emilio Thomas](https://github.com/Emilioeth)
+-[Blaine Brady](https://github.com/BlaineKB)
+-[Kirstyn Gonzalez](https://github.com/kirstgonz)
 
 ## License
 
