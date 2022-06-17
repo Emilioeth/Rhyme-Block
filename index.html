@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css"/>
     <title>RhymeBlock</title>
 </head>
@@ -14,29 +15,37 @@
     </header>
 
         <!-- user input word box -->
-        <form id = "placeholder">
-            <div class="placeholder">
+        <form class="row">
+            <div class="col s4 push-s8"> 
+            <span class="flow-text">
+                <div>
+                <h3>Your Word</h3>
                 <input type="text" name="placeholder" placeholder="Enter word here." />
-            </div>
+                </div>
     <!-- Dropdown box of options (do you want definition? synonym? ect) -->
-            <div class=placeholder>
-                <select name =placeholder class="dropdown">
-                    <option value ="" disabled selected> What're you looking for ?</option>
-                    <option value="eRhymes">Exact rhymes</opttion>
-                    <option value="aRhymes">Approximate rhymes</option>
-                    <option value="Homophones">Homophones</option>
-                    <option value="Consonant">Consonant match</option>
-                    <options values="Definition">Definition</options>
-                    <option value="Synonyms">Synonyms</option>
-                </select>
-            </div>
+                <div class=placeholder>
+                    <select name =placeholder class="dropdown">
+                        <option value ="" disabled selected> What're you looking for ?</option>
+                        <option value="eRhymes">Exact rhymes</opttion>
+                        <option value="aRhymes">Approximate rhymes</option>
+                        <option value="Homophones">Homophones</option>
+                        <option value="Consonant">Consonant match</option>
+                        <options values="Definition">Definition</options>
+                        <option value="Synonyms">Synonyms</option>
+                    </select>
+                </div>
     <!-- Button for results to go -->
-            <div class="placeholder">
-                <button class="btn" id="placeholder" type="submit">Search!</button>
+                <div class="placeholder">
+                    <button class="btn" id="placeholder" type="submit">Search!</button>
+                </div>
+            </span>
             </div>
         </form>
+
 <!-- Results (potentially use Extended navbar with tabs in header) -->
-    <div>
+    <div class="row">
+    <div class="col s8 push-s4">
+    <span class="flow-text">
         <main class="placeholder" id="placeholder">
             <section class="placeholder">
                 <h3 class="placeholder">Results</h3>
@@ -52,11 +61,15 @@
                 </div>
 
                 <h3 class="placeholder">Your works</h3>
-                <ul class="placeholder" id="placeholder"></ul>
+                <div class="placeholder">
+                    <input type="text" name="placeholder" placeholder="Write your heart out!" />
+                </div> 
             </section>
         </main>
+    </span>
     </div>
-    
+    </div>
+
     <div>
         <!-- Link to social medias -->
     </div>

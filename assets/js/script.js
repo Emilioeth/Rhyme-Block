@@ -10,3 +10,8 @@ hom	-Homophones (sound-alike words)	course → coarse
 cns	-Consonant match
 syn	-Synonyms (words contained within the same WordNet synset)
 */
+
+// supposed to make the textbox responsive
+$('#textarea1').val('New Text');
+M.textareaAutoResize($('#textarea1'));
+
