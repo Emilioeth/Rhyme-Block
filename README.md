@@ -13,6 +13,7 @@ RhymeBlock is a website that allows people to write into. The user can then sear
 
 ## Usage and Website
 
+[RhymeBlock](https://emilioeth.github.io/Rhyme-Block/)
 
 ## Credits
 
