@@ -1,0 +1,223 @@
+/* General Style Start */
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+body {
+font-family : 'Kdam Thmor Pro', sans-serif;
+}
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #000000;
+    --third-color: #DAAD86;
+    --fourth-color: #8D8741;
+    --fifth-color: #FBEEC1;
+    --mp-blue: #659DBD;
+    --sixth-color: #BC986A;
+    --backgroun-gray: rgb(184, 180, 180);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    background-color: var(--mp-blue);
+}
+
+/* General Style End */ 
+
+/* Header Style Start */ 
+
+header {
+    text-align: center;
+    height: 160px;
+    border-bottom: solid 3px var(--mp-blue);
+    background-color: var(--fifth-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main-title {
+    display: flex;
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0px;
+    color: var(--mp-blue);
+    font-weight: 500;
+}
+
+.fa-book {
+    margin: 10px 0px 0px 20px;
+    font-size: 50px;
+    color: var(--mp-blue);
+    font-weight: 600;
+}
+
+/* Header Style End */ 
+
+/* Options Style Start */
+
+.word-input input, .options-input select {
+    text-align: center;
+    border: none;
+    border: 3px solid var(--mp-blue);
+    width: 80%;
+    height: 50px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+    margin: 5px 0px;
+}
+
+.word-input {
+    margin-top: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+.options-input {
+    display: flex;
+    justify-content: end;
+}
+
+.search-btn {
+    display: flex;
+    justify-content: end;
+}
+
+.search-btn button {
+    width: 40%;
+    border-radius: 15px;
+}
+
+.btn:focus {
+    background-color:var(--mp-blue);
+}
+
+.search-btn button:hover {
+    transform: scale(1.05);
+    background-color: var(--mp-blue);
+}
+
+.search-btn button::after {
+    background-color: var(--mp-blue);
+}
+
+/* Options Style End */
+
+/* Results Style Start */
+
+.results-wrap {
+    display: flex; 
+    justify-content: center;
+    position: relative;
+}
+
+.results-box {
+    width: 80%; 
+    position: absolute;  
+    top: -210px;
+    
+}
+
+.results-body {
+    height: 55vh;
+    border: solid 5px var(--mp-blue);
+}
+
+.results-title {
+    text-align: center;
+    border-left: solid 5px var(--mp-blue);
+    border-right: solid 5px var(--mp-blue);
+    border-top: solid 5px var(--mp-blue);
+}
+
+.results-title h3 {
+    margin: 0px;
+    padding: 1.9466666667rem 0 1.168rem 0;
+}
+
+/* Results Style End */
+
+/* TextArea Style Start */
+
+.text-section-wrapper {
+    position: relative;
+    display: flex;
+}
+
+.text-box-div {
+    position: absolute;
+    top: -131px;
+    width: 93%;
+    height: 55vh;
+}
+
+.textarea-div, .textarea-div textarea {
+    width: 100%;
+    height: 100%;
+}
+
+.textarea-div textarea {
+    border: 5px solid var(--mp-blue);
+}
+
+.title-and-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+}
+
+.text-buttons {
+    display: flex;
+    position: absolute;
+    left: 540px;
+    bottom: 525px;
+}
+
+.text-area-title h3 {
+    position: absolute;
+    bottom: 520px;
+}
+
+.textarea-btn {
+    font-size: 30px;
+    margin: 0px 11px;
+}
+
+.textarea-btn .fa-solid:hover {
+    transform: scale(1.05);
+    color: var(--mp-blue);
+}
+
+/* TextArea Style End */
+
+/* Footer Style Start */
+
+footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;  
+    background:var(--fifth-color);
+    border-top: solid 3px var(--mp-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ footer h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
+    color: var(--mp-blue);
+    font-size: 30px;
+ }
+
+/* Footer Style End */
