@@ -155,6 +155,16 @@ header h1 {
     padding: 1.9466666667rem 0 1.168rem 0;
 }
 
+.results-body h4 {
+    font-size: 28px;
+    margin: 5px 0px 0px 5px ;
+}
+
+.results-body ul li {
+    font-size: 20px;
+    margin: 10px 0px 0px 10px;
+}
+
 /* Results Style End */
 
 /* TextArea Style Start */
@@ -257,6 +267,22 @@ footer {
     .text-area-title h3 span {
         display: none;
     }
+    .results-body h4 {
+        font-size: 25px;
+    }
+    
+    .results-body ul li {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 627px) {
+    .results-body h4 {
+        font-size: 23px;
+    }
+    .results-body ul li {
+        font-size: 15px;
+    }
 }
 
 @media (max-width: 600px ) {
@@ -350,6 +376,12 @@ footer {
     }
     .options-input {
         font-size: 18px;
+    }
+    .results-body h4 {
+        font-size: 28px;
+    }
+    .results-body ul li {
+        font-size: 19px;
     }
 }
 
