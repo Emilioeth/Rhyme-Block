@@ -76,7 +76,7 @@ header h1 {
 
 /* Options Style Start */
 
-.word-input input, .options-input select {
+.word-input input, .options-select {
     text-align: center;
     border: none;
     border: 3px solid var(--mp-blue);
@@ -93,7 +93,7 @@ header h1 {
     justify-content: end;
 }
 
-.options-input {
+.options {
     display: flex;
     justify-content: end;
 }
@@ -323,7 +323,7 @@ footer {
         justify-content: center;
     }
 
-    .options-input {
+    .options-select {
         justify-content: center;
     }
     .search-btn {
@@ -376,7 +376,7 @@ footer {
     .textarea-div textarea {
         height: 60vh;
     }
-    .options-input {
+    .options-select {
         font-size: 18px;
     }
     .results-body h4 {
