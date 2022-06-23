@@ -88,18 +88,29 @@ var apiUrl = "https://api.datamuse.com/words?rel_rhy=blue";
 fetch(apiUrl, {
     mode: 'no-cors'
 })
-    .then(function(response) {
-        console.log(response);
-        response.JSON().then(function(data) {
-        console.log(data);
-        // var docArray = data.response.docs;
-        // for(var i = 0; i < docArray.length; i++) {
-        //     var listItem = document.createElement("li");
-        //     listItem.textContent = docArray[i].description;
-        //     resultsBodyEl.appendChild(listItem);
-        // }
-        });
+.then(function(response) {
+    return json(response);
+    response.json()
+    .then(function(data) {
+    console.log(data);
+    // var docArray = data.response.docs;
+    // for(var i = 0; i < docArray.length; i++) {
+    //     var listItem = document.createElement("li");
+    //     listItem.textContent = docArray[i].description;
+    //     resultsBodyEl.appendChild(listItem);
+    // }
     });
+});
+
+var apiUrl =  "https://www.dictionaryapi.com/api/v3/references/collegiate/json/" + word + "?key=1fda1280-56d7-46fd-83fd-00e8c791511a"
+fetch(apiUrl)
+.then(function(response){
+    return response.json();
+})
+.then(function(data){
+    console.log(data[0].shortdef[0])
+})
+
 // console.log(response);
     // return response.JSON()
     // .then(function(data) {
