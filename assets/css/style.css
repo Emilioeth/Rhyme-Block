@@ -484,7 +484,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) and (max-height: 680px){
+@media (max-width: 600px) and (max-height: 880px){
     .results-body {
         height: 52vh;
     }
@@ -492,19 +492,11 @@ footer {
         height: 52vh;
     }
 }
-    /*
-    .col.s7.push-s5.m5.push-m7.text-section-wrapper {
-        position: absolute;
-        bottom: 10px;   
-
-     .text-box-div {
-        top: -86px;
-        width: 95%;
-    }
+@media (max-height:880px){
     .textarea-div textarea {
-        height: 65vh;
+      height: 46vh;
     }
-    .textarea-btn {
-        margin: 0px 5px;
+    .results-body{
+      height: 46vh;
     }
-    */
+  }
