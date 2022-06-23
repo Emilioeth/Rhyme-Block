@@ -120,7 +120,7 @@ document.getElementById("btn-save").addEventListener("click", function ()
 loadTasks()
 
 document.getElementById("btn-new").addEventListener("click", function(){
-    textArea.innerHTML = ''
+    textArea.value = ''
     localStorage.clear();
 
     alertEl.classList.remove("hide");
