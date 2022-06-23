@@ -4,6 +4,7 @@
 
 body {
 font-family : 'Kdam Thmor Pro', sans-serif;
+overflow: hidden;
 }
 
 :root {
@@ -165,6 +166,18 @@ header h1 {
     margin: 10px 0px 0px 10px;
 }
 
+.Rhymes-box {
+    margin: 0px 0px 10px 0px;
+}
+
+.Definition-box {
+    margin: 120px 0px 0px 0px;
+}
+
+.rhyme-list li {
+    display: inline;
+}
+
 /* Results Style End */
 
 /* TextArea Style Start */
@@ -216,6 +229,82 @@ header h1 {
     color: var(--mp-blue);
 }
 
+#text-area {
+    font-size: 21px;
+}
+
+
+.alert {
+    background-color:darkseagreen;
+    border: solid 2px rgb(89, 141, 89);
+    padding: 20px 40px;
+    min-width: 300px;
+    position: absolute;
+    right: 0px;
+    top:165px;
+    overflow: hidden;
+    border-radius: 4px;
+    border-left: 8px solid rgb(89, 141, 89);
+}
+
+.alert.show {
+    animation: show_slide 1s ease forwards;
+}
+@keyframes show_slide {
+    0%{
+        transform: translateX(100%);
+    }
+    40%{
+        transform: translateX(-10%);
+    }
+    80%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-10px);
+    }
+}
+.alert.hide {
+    display: none;
+}
+
+.alert .msg {
+    padding: 0px 20px;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+
+.alert .close-btn {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(89, 141, 89);
+    padding: 17px 18px;
+}
+
+.alert .close-btn {
+    color: var(--primary-color);
+    font-size: 22px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: darkseagreen;
+}
+
+@media (max-width:1088px){
+    .alert {
+        padding: 10px 30px;
+        min-width: 250px;
+    }
+}
+@media (max-width:600px){
+    .alert {
+        display: none;
+    }
+}
 /* TextArea Style End */
 
 /* Footer Style Start */
