@@ -142,6 +142,7 @@ header h1 {
 .results-body {
     height: 54vh;
     border: solid 5px var(--mp-blue);
+    overflow: auto;
 }
 
 .results-title {
