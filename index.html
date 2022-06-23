@@ -25,17 +25,17 @@
             <div class="row">
                 <div class="col m3 s5">
                     <div class="word-input">
-                        <input type="text" name="word-input" placeholder="Enter Your Word" autocomplete="off" class="browser-default" />
+                        <input id="user-input" value="" type="text" name="word-input" placeholder="Enter Your Word" autocomplete="off" class="browser-default" />
                     </div>
                 </div>
             </div>
 
             <div class="row">
                 <div class="col m3 s5">
-                    <div class="options-input">
-                        <select name="options-input" class="options-select browser-default">
+                    <div>
+                        <select onchange="rhyme()" name="options-input" class="options-select browser-default">
                             <option value="" disabled selected>What're you looking for ?</option>
-                            <option value="eRhymes">Exact Rhymes</opttion>
+                            <option value="eRhymes">Exact Rhymes</option>
                             <option value="aRhymes">Approximate Rhymes</option>
                             <option value="Homophones">Homophones</option>
                             <option value="Consonant">Consonant Match</option>
@@ -47,14 +47,14 @@
             </div>
 
             <div class="row">
-                <form class="col m3 s5">
+                <div class="col m3 s5">
                     <div class="search-btn">
-                        <button class="btn btn-search" id="search" type="submit">Search!</button>
+                        <button class="btn btn-search" id="search-btn" type="submit">Search!</button>
                     </div>
                     <div class="songbtn-mobile">
                         <a href="./html-page/song.html" target="blank"> <button class="song-btn btn" id="" type="submit">Song</button> </a>
                     </div>
-                </form>
+                </div>
             </div>
 
         </div>
@@ -69,12 +69,14 @@
 
                         <div class="results-body">
 
-                                <h4>Exact Rhymes</h4>
-                            
+                                <h4>Rhymes</h4>
                             <ul>
-                                <li>
-                                    Example, Example, Example, Example, Example, Example, Example, Example, Example, Example, Example, Example, Example, Example, Example.
-                                </li>
+                                <li id="rhyme-list"></li>
+                            </ul>
+
+                                <h4>Definition</h4>
+                            <ul>
+                                <li id="definition-list"></li>
                             </ul>
 
                         </div>
