@@ -4,7 +4,7 @@ var rhymeList = document.querySelector('#rhyme-list');
 var buttonNew = document.querySelector('#btn-new');
 var buttonSave = document.querySelector('#btn-save');
 var buttonCopy = document.querySelector('#btn-copy');
-var taskArea = document.getElementById('text-area');
+var textArea = document.getElementById('text-area');
 var alertEl = document.querySelector('.alert');
 var alertHideEL = document.querySelector('.alert-close')
 
@@ -66,7 +66,7 @@ function rhyme(word) {
         rhymeTitle.innerHTML = "Synonyms"
         break;
     default:
-        'Please pick an options'
+        'Please pick an option'
     };
 
     console.log(datamuseUrl);
@@ -105,7 +105,7 @@ document.getElementById("btn-copy").addEventListener("click", function(){
 
 var loadTasks = function() {
     userSong = localStorage.getItem('userSong');
-    taskArea.innerHTML = userSong;
+    textArea.innerHTML = userSong;
 }
 
 document.getElementById("btn-save").addEventListener("click", function ()
@@ -120,6 +120,9 @@ document.getElementById("btn-save").addEventListener("click", function ()
 loadTasks()
 
 document.getElementById("btn-new").addEventListener("click", function(){
+    textArea.innerHTML = ''
     localStorage.clear();
-    taskArea.innerHTML = ""
+
+    alertEl.classList.remove("hide");
+    alertEl.classList.add("show");
 })
