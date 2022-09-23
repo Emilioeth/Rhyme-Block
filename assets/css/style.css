@@ -12,8 +12,8 @@ overflow: hidden;
     --secondary-color: #000000;
     --third-color: #DAAD86;
     --fourth-color: #8D8741;
-    --fifth-color: #FBEEC1;
-    --mp-blue: #659DBD;
+    --fifth-color: #323028;
+    --mp-blue: #000000;
     --sixth-color: #BC986A;
     --backgroun-gray: rgb(184, 180, 180);
 }
@@ -64,13 +64,14 @@ header h1 {
     margin: 0px;
     color: var(--mp-blue);
     font-weight: 500;
+    color: white;
 }
 
 .fa-book {
     margin: 10px 0px 0px 20px;
     font-size: 50px;
-    color: var(--mp-blue);
     font-weight: 600;
+    color: white;
 }
 
 /* Header Style End */ 
@@ -326,7 +327,7 @@ footer {
     margin: 0;
     padding: 0;
     font-weight: 200;
-    color: var(--mp-blue);
+    color: white;
     font-size: 30px;
  }
 
